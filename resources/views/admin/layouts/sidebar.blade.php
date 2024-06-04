@@ -218,12 +218,14 @@
                 </a>
                 <div class="dropdown-divider"></div>
                 <form method="POST" action="{{ route('logout') }}">
-                @csrf
-                <a href="{{ route('logout') }}" onclick="event.preventDefault();
-                this.closest('form').submit();" class="dropdown-item has-icon text-danger">
-                    <i class="fas fa-sign-out-alt"></i> Logout
-                </a>
-            </form>
+                    @csrf
+                    <a href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                this.closest('form').submit();"
+                        class="dropdown-item has-icon text-danger">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </form>
 
             </div>
         </li>
@@ -238,8 +240,22 @@
             <a href="">Sys</a>
         </div>
         <ul class="sidebar-menu">
-            <li class="menu-header">Dashboard</li>
-            <li class="menu-header">Starter</li>
+
+            {{-- Dashboard --}}
+            <li class="menu-header">Admin Dashboard</li>
+            <li><a class="nav-link" href="{{ route('admin.dashboard.index') }}"><i class="far fa-square"></i>
+                    <span>Dashboard</span></a></li>
+
+            {{-- Sections --}}
+            <li class="dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i
+                        class="fas fa-columns"></i> <span>Sections</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="{{ route('admin.hero.index') }}">Hero</a></li>
+
+                </ul>
+            </li>
+
             <li class="dropdown">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i
                         class="fas fa-columns"></i> <span>Layout</span></a>
