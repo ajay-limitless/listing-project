@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b408f42c62fd8adbb7ca48bfea2838ec",
+    "content-hash": "30a1979f57667ae159590331dc3b0211",
     "packages": [
         {
             "name": "brick/math",
@@ -6225,6 +6225,44 @@
             ],
             "abandoned": "php-flasher/flasher-toastr-laravel",
             "time": "2024-05-26T23:14:01+00:00"
+        },
+        {
+            "name": "zalanihir/country-state-city",
+            "version": "v1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ZalaNihir/country-state-city-package.git",
+                "reference": "02b05645752d6d94be5fbdc6a1a971a3ca05973a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ZalaNihir/country-state-city-package/zipball/02b05645752d6d94be5fbdc6a1a971a3ca05973a",
+                "reference": "02b05645752d6d94be5fbdc6a1a971a3ca05973a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nihir\\CountryStateCity\\": "src/",
+                    "Nihir\\CountryStateCity\\Console\\Commands\\": "src/Console/Commands/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ZalaNihir",
+                    "email": "zalanihir8866@gmail.com"
+                }
+            ],
+            "description": "Laravel package for country, state, city providers with the flags",
+            "support": {
+                "issues": "https://github.com/ZalaNihir/country-state-city-package/issues",
+                "source": "https://github.com/ZalaNihir/country-state-city-package/tree/v1"
+            },
+            "time": "2024-02-04T10:16:37+00:00"
         }
     ],
     "packages-dev": [

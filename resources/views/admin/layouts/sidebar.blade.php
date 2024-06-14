@@ -203,7 +203,7 @@
         <li class="dropdown"><a href="#" data-toggle="dropdown"
                 class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                 <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-                <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div>
+                <div class="d-sm-none d-lg-inline-block">Admin</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
                 <div class="dropdown-title">Logged in 5 min ago</div>
@@ -234,20 +234,58 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="">Syssoft</a>
+            <a href="">ONE PERCENT</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
-            <a href="">Sys</a>
+            <a href="">OP</a>
         </div>
         <ul class="sidebar-menu">
 
             {{-- Dashboard --}}
             <li class="menu-header">Admin Dashboard</li>
-            <li><a class="nav-link" href="{{ route('admin.dashboard.index') }}"><i class="far fa-square"></i>
+            <li><a class="nav-link" href="{{ route('admin.dashboard.index') }}"><i class="fas fa-th-large"></i>
                     <span>Dashboard</span></a></li>
 
+            {{-- Users --}}
+            <li><a class="nav-link" href="{{ route('admin.user.index') }}"><i
+                        class="far fa-user"></i><span>Users</span></a></li>
+
+            {{-- Staffs --}}
+            <li><a class="nav-link" href="{{ route('admin.staff.index') }}"><i
+                        class="fas fa-users"></i><span>Staffs</span></a></li>
+
+            {{-- Leads --}}
+            <li><a class="nav-link" href="{{ route('admin.lead.index') }}"><i
+                        class="far fa-file-alt"></i><span>Leads</span></a></li>
+
+            {{-- Agents --}}
+            <li><a class="nav-link" href="{{ route('admin.agent.index') }}"><i class="fas fa-user-tie"></i><span>Agents</span></a></li>
+
+            {{-- Property --}}
+            <li><a class="nav-link" href="{{ route('admin.property.index') }}">  <i class="fas fa-home"></i><span>Properties</span></a></li>
+
+            {{-- Amenity --}}
+            <li><a class="nav-link" href="{{ route('admin.amenity.index') }}"><i class="fas fa-swimming-pool"></i><span>Amenities</span></a></li>
+
+            {{-- category --}}
+            <li><a class="nav-link" href="{{ route('admin.category.index') }}"> <i class="fas fa-list"></i><span>Categories</span></a></li>
+
+            {{-- SecurityFeature --}}
+            <li><a class="nav-link" href="{{ route('admin.security_feature.index') }}">  <i class="fas fa-shield-alt"></i><span>Security Feature</span></a></li>
+
+            {{-- FarmFeature --}}
+            <li><a class="nav-link" href="{{ route('admin.farm_feature.index') }}">  <i class="fas fa-tractor"></i> <span>Farm Feature</span></a></li>
+
+            {{-- Testimonial --}}
+            <li><a class="nav-link" href="{{ route('admin.testimonial.index') }}">    <i class="fas fa-comment-dots"></i><span>Testimonial</span></a></li>
+
+            {{-- Banner --}}
+            <li><a class="nav-link" href="{{ route('admin.banner.index') }}"><i class="fas fa-image"></i><span>Banner</span></a></li>
+
+
+
             {{-- Sections --}}
-            <li class="dropdown">
+            {{-- <li class="dropdown">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i
                         class="fas fa-columns"></i> <span>Sections</span></a>
                 <ul class="dropdown-menu">
@@ -255,6 +293,7 @@
 
                 </ul>
             </li>
+
 
             <li class="dropdown">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i
@@ -265,7 +304,7 @@
                     <li><a class="nav-link" href="layout-top-navigation.html">Top Navigation</a></li>
                 </ul>
             </li>
-            <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li>
+            <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li> --}}
 
 
         </ul>

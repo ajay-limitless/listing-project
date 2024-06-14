@@ -10,7 +10,8 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "php-flasher/flasher-sweetalert": "^2.0",
-        "yoeunes/toastr": "^3.0"
+        "yoeunes/toastr": "^3.0",
+        "zalanihir/country-state-city": "^1.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.0",
